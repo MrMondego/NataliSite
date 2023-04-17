@@ -69,6 +69,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 99;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
   visibility: hidden;
@@ -77,7 +78,11 @@
 
 @font-face {
   font-family: "Oswald";
-  src: url("./font/Oswald-VariableFont_wght.ttf") format("truetype");
+  src: url("../css/font/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Andada Pro";
+  src: url("../css/font/AndadaPro-VariableFont_wght.ttf") format("truetype");
 }
 .header {
   background: #BFB88C;
@@ -314,11 +319,33 @@
   transition: opacity 0.2s linear;
 }
 
+.footer {
+  background: #734D4D;
+  width: 100%;
+  color: #fff;
+}
+
+.container__footer {
+  padding: 45px 54px;
+}
+
+.contacts {
+  font-family: "Andada Pro" sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+.contacts__element {
+  letter-spacing: 0.05em;
+}
+
 @media (max-width: 1350px) {
   .menu-burger {
     display: block;
     position: absolute;
     right: 25px;
+  }
+  .header {
+    z-index: 100;
   }
   .header_flex {
     justify-content: center;
@@ -338,7 +365,6 @@
     top: 0;
     background: #fff;
     box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.8);
-    z-index: 100;
     overflow-y: auto;
     transform: translateX(-100%);
     transition: all 0.3s;

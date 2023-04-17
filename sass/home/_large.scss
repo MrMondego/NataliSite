@@ -5,6 +5,7 @@
         right: 25px;
     }
     .header {
+        z-index: 100;
         &_flex {
             justify-content: center;
             &_no-background {
@@ -24,7 +25,6 @@
         top: 0;
         background: #fff;
         box-shadow: 5px 0 15px -5px rgba(0,0,0,0.8);
-        z-index: 100;
         overflow-y: auto;
         transform: translateX(-100%);
         transition: all 0.3s;

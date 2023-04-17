@@ -1,0 +1,18 @@
+@use "../variables" as vars;
+
+.footer {
+   background: vars.$main-color;
+   width: 100%;
+   color: #fff;
+}
+.container__footer {
+   padding: 45px 54px;
+}
+.contacts {
+   font-family: "Andada Pro" sans-serif;
+   font-weight: 200;
+   font-size: 20px;
+   &__element {
+      letter-spacing: 0.05em;
+   }
+}

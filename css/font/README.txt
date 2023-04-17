@@ -1,23 +1,28 @@
-Oswald Variable Font
-====================
+Andada Pro Variable Font
+========================
 
-This download contains Oswald as both a variable font and static fonts.
+This download contains Andada Pro as both variable fonts and static fonts.
 
-Oswald is a variable font with this axis:
+Andada Pro is a variable font with this axis:
   wght
 
-This means all the styles are contained in a single file:
-  Oswald-VariableFont_wght.ttf
+This means all the styles are contained in these files:
+  AndadaPro-VariableFont_wght.ttf
+  AndadaPro-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Oswald:
-  static/Oswald-ExtraLight.ttf
-  static/Oswald-Light.ttf
-  static/Oswald-Regular.ttf
-  static/Oswald-Medium.ttf
-  static/Oswald-SemiBold.ttf
-  static/Oswald-Bold.ttf
+in those cases you can use the static font files for Andada Pro:
+  static/AndadaPro-Regular.ttf
+  static/AndadaPro-Medium.ttf
+  static/AndadaPro-SemiBold.ttf
+  static/AndadaPro-Bold.ttf
+  static/AndadaPro-ExtraBold.ttf
+  static/AndadaPro-Italic.ttf
+  static/AndadaPro-MediumItalic.ttf
+  static/AndadaPro-SemiBoldItalic.ttf
+  static/AndadaPro-BoldItalic.ttf
+  static/AndadaPro-ExtraBoldItalic.ttf
 
 Get started
 -----------
