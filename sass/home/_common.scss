@@ -150,20 +150,44 @@
 }
 .main {
     &__great-text {
-        // position: relative;
-        box-sizing:border-box;
+        position: relative;
         @include mixins.adaptiv-font(30, 20);
         text-align: center;
         font-weight: 400;
         color: #6A253E;
         background: linear-gradient(180deg, rgba(223,170,196,1) 0%, rgba(191,184,140,1) 100%);
-        padding: 57px 0px 57px 0px;
+        padding: 20px 0px 20px 0px;
         &_outline::before {
-            // border: 0px solid transparent;
-            // animation: border-appereance 1s ease-in-out 1s forwards;
-            height: 0;
+            content: "";
+            display: block;
+            border: 0px solid transparent;
+            animation: border-appereance 1s ease-in-out 1s forwards;
+            position: relative;
+            left: 0;
+            top: -20px;
+            height: 0px;
             background-color: vars.$main-color;
         }
+    }
+    &__typing-container {
+        padding: 57px 0px;
+    }
+}
+.typing-container {
+    background: rgba(255, 255, 255, 0.35);
+    max-width: 90%;
+    margin: 0 auto;
+}
+.typing-cursor {
+    display: inline-block;
+    background-color: vars.$cursor-color;
+    margin-left: 0.1rem;
+    width: 3px;
+    height: 1.1em;
+    animation: blinks 1s infinite;
+    transform: translateY(0.2em);
+    &.typing {
+        animation: none;
     }
 }
 .overlay {

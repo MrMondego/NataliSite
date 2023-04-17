@@ -1,11 +1,45 @@
 @-webkit-keyframes border-appereance {
   to {
-    height: 37px;
+    height: 30px;
   }
 }
 @keyframes border-appereance {
   to {
-    height: 37px;
+    height: 30px;
+  }
+}
+@-webkit-keyframes blinks {
+  0% {
+    background-color: #6A253E;
+  }
+  49% {
+    background-color: #6A253E;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #6A253E;
+  }
+}
+@keyframes blinks {
+  0% {
+    background-color: #6A253E;
+  }
+  49% {
+    background-color: #6A253E;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #6A253E;
   }
 }
 @font-face {
@@ -158,17 +192,49 @@
 }
 
 .main__great-text {
-  box-sizing: border-box;
+  position: relative;
   font-size: calc(20px + 10 * ((100vw - 320px) / 960));
   text-align: center;
   font-weight: 400;
   color: #6A253E;
   background: linear-gradient(180deg, rgb(223, 170, 196) 0%, rgb(191, 184, 140) 100%);
-  padding: 57px 0px 57px 0px;
+  padding: 20px 0px 20px 0px;
 }
 .main__great-text_outline::before {
-  height: 0;
+  content: "";
+  display: block;
+  border: 0px solid transparent;
+  -webkit-animation: border-appereance 1s ease-in-out 1s forwards;
+          animation: border-appereance 1s ease-in-out 1s forwards;
+  position: relative;
+  left: 0;
+  top: -20px;
+  height: 0px;
   background-color: #734D4D;
+}
+.main__typing-container {
+  padding: 57px 0px;
+}
+
+.typing-container {
+  background: rgba(255, 255, 255, 0.35);
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.typing-cursor {
+  display: inline-block;
+  background-color: #6A253E;
+  margin-left: 0.1rem;
+  width: 3px;
+  height: 1.1em;
+  -webkit-animation: blinks 1s infinite;
+          animation: blinks 1s infinite;
+  transform: translateY(0.2em);
+}
+.typing-cursor.typing {
+  -webkit-animation: none;
+          animation: none;
 }
 
 .overlay {

@@ -3,10 +3,18 @@ $maxWidth: 1280;
 $main-color: #734D4D;
 $light-rose: #FFDEE6;
 $overlay-color: rgba(0, 0, 0, 0.7);
+$cursor-color: #6A253E;
 
 @keyframes border-appereance {
     to {
         // border-top: 37px solid $main-color;
-        height: 37px;
+        height: 30px;
     }
+}
+@keyframes blinks {
+    0%  { background-color: $cursor-color; }
+    49% { background-color: $cursor-color; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: $cursor-color; }
 }
