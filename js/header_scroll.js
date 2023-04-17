@@ -1,6 +1,6 @@
 let classBackground = "header_flex_no-background";
 let classNoBackground = "header_flex";
-window.onload = () => {
+addEventListener("load", () => {
     addEventListener("scroll", (e) => {
         let header = document.getElementsByClassName("header")[0];
         if(scrollY > 0)
@@ -8,4 +8,4 @@ window.onload = () => {
         else
             header.classList.replace(classNoBackground, classBackground);
     })
-}
+})

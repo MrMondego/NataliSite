@@ -1,4 +1,4 @@
-onload = () => {
+addEventListener("load", () => {
   const textArray = "Я хочу поведать вам историю своих картин...",
         typedTextSpan = document.querySelector(".typing-container__typed-text"),
         cursorSpan = document.querySelector(".typing-cursor"),
@@ -24,4 +24,4 @@ onload = () => {
       started = true;
     }
   });
-}
+})
