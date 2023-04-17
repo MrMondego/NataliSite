@@ -1,4 +1,12 @@
 @media (max-width: 425px) {
+   .nav {
+      &__menu {
+         font-size: 20px;
+      }
+      &__item {
+         padding: 10px 20px !important;
+      }
+   }
    .main__gallery-previews {
       padding: 20px 20px;
    }
