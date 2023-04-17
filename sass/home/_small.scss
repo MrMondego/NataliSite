@@ -1,0 +1,12 @@
+@media (max-width: 425px) {
+   .main__gallery-previews {
+      padding: 20px 20px;
+   }
+   .gallery-category {
+      max-width: 300px;
+      &:not(:last-child) {
+         margin: 0;
+         margin-bottom: 10px;
+      }
+   }
+}
