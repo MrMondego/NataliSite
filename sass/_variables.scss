@@ -1,0 +1,12 @@
+$maxWidth: 1280;
+
+$main-color: #734D4D;
+$light-rose: #FFDEE6;
+$overlay-color: rgba(0, 0, 0, 0.7);
+
+@keyframes border-appereance {
+    to {
+        // border-top: 37px solid $main-color;
+        height: 37px;
+    }
+}

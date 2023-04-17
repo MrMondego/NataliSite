@@ -1,0 +1,11 @@
+let classBackground = "header_flex_no-background";
+let classNoBackground = "header_flex";
+window.onload = () => {
+    addEventListener("scroll", (e) => {
+        let header = document.getElementsByClassName("header")[0];
+        if(scrollY > 0)
+            header.classList.replace(classBackground, classNoBackground);
+        else
+            header.classList.replace(classNoBackground, classBackground);
+    })
+}
