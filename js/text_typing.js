@@ -5,8 +5,7 @@ onload = () => {
         typingDelay = 60;
 
   let charIndex = 0;
-  // if(scrollY > 20)
-      type();
+  
   function type() {
     if (charIndex < textArray.length) {
       if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
@@ -18,4 +17,11 @@ onload = () => {
       cursorSpan.classList.remove("typing");
     }
   }
+  let started = false;
+  addEventListener("scroll", () => {
+    if(scrollY > 58 && !started) {
+      type();
+      started = true;
+    }
+  });
 }
