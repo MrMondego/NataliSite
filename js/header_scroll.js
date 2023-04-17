@@ -1,5 +1,5 @@
-let classBackground = "header_flex_no-background";
-let classNoBackground = "header_flex";
+const classBackground = "header_flex_no-background",
+      classNoBackground = "header_flex";
 addEventListener("load", () => {
     addEventListener("scroll", (e) => {
         let header = document.getElementsByClassName("header")[0];

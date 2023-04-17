@@ -1,0 +1,100 @@
+.header {
+   background: #BFB88C;
+   transition: background 0.2s ease-in-out;
+   max-height: 70px;
+   z-index: 10;
+   &_flex {
+       display: flex;
+       flex-wrap: nowrap;
+       flex-direction: row;
+       align-items: center;
+       justify-content: flex-end;
+
+       min-width: 100vw;
+       &_no-background {
+           display: flex;
+           flex-wrap: nowrap;
+           flex-direction: row;
+           align-items: center;
+           justify-content: flex-end;
+
+           min-width: 100vw;
+
+           background: none;
+           color: #000;
+       }
+   }
+   &__logo {
+       margin: 0px 36px 0px 0px;
+       transform: translateY(55px);
+   }
+   // &__menu-burger {
+   //     max-width: 40px;
+   //     position: relative;
+   &__nav {
+       padding-right: 20px;
+   }
+}
+.logo {
+   max-width: 256px;
+   &__img {
+       width: 100%;
+       height: 100%;
+       filter: invert(100%);
+       margin: -5px -20px 0 0;
+   }
+}
+.menu-burger {
+   width: 35px;
+   height: 25px;
+   cursor: pointer;
+   background-color: transparent;
+   border: none;
+   position: relative;
+   display: none;
+   &::before, &::after {
+       content: "";
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 3px;
+       background-color: #fff;
+       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+   }
+   span {
+       position: absolute;
+       left: 0;
+       top: 50%;
+       transform: translateY(-50%);
+       width: 100%;
+       height: 3px;
+       background-color: #fff;
+       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+   }
+   &::after {
+       top: auto;
+       bottom: 0;
+   }
+}
+.nav {
+   &__menu {
+       font-size: 30px;
+       font-weight: 300;
+       list-style-type: none;
+       // padding: 0px 0px 32px 0;
+       &_flex {
+           display: flex;
+           flex-direction: row;
+           flex-wrap: nowrap;
+       }
+   }
+   &__item:not(:last-child) {
+       position: relative;
+       padding: 0px 32px 0px 0px;
+   }
+   &__link {
+       text-decoration: none;
+       color:#fff;
+   }
+}

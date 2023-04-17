@@ -1,0 +1,33 @@
+@use "../mixins";
+.top {
+   min-height: 90vh;
+   // text-align: center;
+   // transform-style: inherit;
+   color: #fff;
+   background: linear-gradient(90deg, rgba(0,0,0,0.35) 0%, transparent 100%), url("../image/top_background.jpg") fixed no-repeat,;
+   background-position: 43% 100%;
+   background-size: cover;
+   box-shadow: inset ;
+   &__about {
+       padding-left: 10vw;
+       padding-top: 14.5vh;
+   }
+}
+.about {
+   text-transform: uppercase;
+   word-wrap: normal;
+   max-width: 30vw;
+   &__title {
+       font-weight: 400;
+       @include mixins.adaptiv-font(84, 45);
+       line-height: 1em;
+       text-align: left;
+       margin: 0px 0px 30px 0px;
+   }
+   &__subtitle {
+       font-weight: 300;
+       @include mixins.adaptiv-font(45, 30);
+       line-height: 1.2em;
+       text-align: left;
+   }
+}
