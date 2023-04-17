@@ -17,7 +17,14 @@ jobs:
         run: |
           npm install static-site
           npm run build
+      - name: Commit files
+        run: |
+          git config --local user.email "MrMondego@users.noreply.github.com"
+          git config --local user.name "MrMondego"
+          git commit -a -m "Updates"
       - name: Deploy site to gh-pages branch
-        uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
+        uses: ad-m/github-push-action@v0.5.0
         with:
-          repo-token: ${{ secrets.GH_PAT }}
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          force: true
