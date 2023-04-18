@@ -1,13 +1,10 @@
 @use "../mixins";
 .top {
    min-height: 95vh;
-   // text-align: center;
-   // transform-style: inherit;
    color: #fff;
    background: linear-gradient(90deg, rgba(0,0,0,0.35) 0%, transparent 100%), url("../image/top_background.jpg") fixed no-repeat,;
    background-position: 43% 100%;
    background-size: cover;
-   background: transparent;
    &__about {
        padding-left: 10vw;
        padding-top: 14.5vh;
