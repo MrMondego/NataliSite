@@ -432,6 +432,6 @@
   }
   .gallery-category:not(:last-child) {
     margin: 0;
-    margin-bottom: 10px;
+    margin-right: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
