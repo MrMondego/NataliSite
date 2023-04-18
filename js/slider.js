@@ -1,6 +1,6 @@
 const midWidth = 768;
 const slideInterval = 4000;
-const marginRight = 15;
+const marginRight = 10;
 addEventListener("DOMContentLoaded", () => {
    const slider = document.querySelector(".slider");
    const sliderLine = document.querySelector(".slider__line");
