@@ -15,9 +15,9 @@ addEventListener("DOMContentLoaded", () => {
       sliderLineElement.offsetWidth;
    let offset = 0;
    function slideToNext() {
+      offset += sliderLineElement.offsetWidth + marginRight;
       if(offset > maxOffset)
          offset = 0;
-      offset += sliderLineElement.offsetWidth + marginRight;
       sliderLine.style.left = -offset + "px";
    }
    setInterval(slideToNext, slideInterval);
