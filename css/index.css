@@ -183,6 +183,7 @@
   min-height: 90vh;
   color: #fff;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, transparent 100%), url("../image/top_background.jpg") fixed no-repeat;
+  background-position: 43% 100%;
   background: transparent;
   box-shadow: inset;
 }
