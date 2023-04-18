@@ -9,7 +9,8 @@ $cursor-color: #6A253E;
 @keyframes border-appereance {
     to {
         // border-top: 37px solid $main-color;
-        height: 30px;
+        top: -20px;
+        height: 20px;
     }
 }
 @keyframes blinks {
