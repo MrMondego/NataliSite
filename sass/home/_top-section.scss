@@ -5,8 +5,9 @@
    // transform-style: inherit;
    color: #fff;
    background: linear-gradient(90deg, rgba(0,0,0,0.35) 0%, transparent 100%), url("../image/top_background.jpg") fixed no-repeat,;
-   background-position: 43% 100%;
-   background-size: cover;
+//    background-position: 43% 100%;
+//    background-size: cover;
+   background: transparent;
    box-shadow: inset ;
    &__about {
        padding-left: 10vw;
