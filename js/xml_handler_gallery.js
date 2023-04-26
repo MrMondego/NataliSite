@@ -1,5 +1,5 @@
 const photosFile = 'birds.xml';
-const pathToFile = '../xml/';
+const pathToFile = "/" + window.location.pathname.split("/")[1] + '/xml/';
 
 const imgUrls = [];
 const imgDescriptions = [];
