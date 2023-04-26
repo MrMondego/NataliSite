@@ -1,1 +1,12 @@
-@use "../home/index";
+@use "../prevent-default";
+@use "../home/header";
+@use "../home/footer";
+
+@use "gallery-container";
+@use "../home/large";
+@use "../home/small";
+
+.container__main {
+   // margin от шапки сайта
+   margin-top: 70px;
+}

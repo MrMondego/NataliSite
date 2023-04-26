@@ -1,6 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <photos>
-  <photo>https://sun9-46.userapi.com/impg/Ib3CMpuqnUJlM4yNmOy1Mc0yXONzU3jXJBRCmg/3jUXLZBBWXI.jpg?size=1530x2160&quality=95&sign=b53ad3a4a244a69d7b57fd1feb5d13cb&type=album</photo>
-  <photo>https://sun9-71.userapi.com/impg/vyf7rt1J_epn6zC4hJ06j7FYlxNUsNft-5uALw/GsL6Sd_5QfE.jpg?size=991x1600&quality=95&sign=f5a0b1a60b338b207ed32a9d2404fe3c&type=album</photo>
-  <photo>https://sun9-73.userapi.com/impg/zTDbmcW38EPnqfo7Ww4kWvRDlvbwwQILb20n8Q/Dq1sGHbVzAg.jpg?size=1076x766&quality=95&sign=4a011fc3546b030c18e9fda423e185b9&type=album</photo>
+  <photo>
+    <url>https://sun9-46.userapi.com/impg/Ib3CMpuqnUJlM4yNmOy1Mc0yXONzU3jXJBRCmg/3jUXLZBBWXI.jpg?size=1530x2160&amp;quality=95&amp;sign=b53ad3a4a244a69d7b57fd1feb5d13cb&amp;type=album</url>
+    <description>Цветы</description>
+  </photo>
+  <photo>
+    <url>https://sun9-71.userapi.com/impg/vyf7rt1J_epn6zC4hJ06j7FYlxNUsNft-5uALw/GsL6Sd_5QfE.jpg?size=991x1600&amp;quality=95&amp;sign=f5a0b1a60b338b207ed32a9d2404fe3c&amp;type=album</url>
+    <description>Цветы</description>
+  </photo>
+  <photo>
+    <url>https://sun9-73.userapi.com/impg/zTDbmcW38EPnqfo7Ww4kWvRDlvbwwQILb20n8Q/Dq1sGHbVzAg.jpg?size=1076x766&amp;quality=95&amp;sign=4a011fc3546b030c18e9fda423e185b9&amp;type=album</url>
+    <description>Птица</description>
+  </photo>
 </photos>

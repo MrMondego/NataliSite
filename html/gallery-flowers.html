@@ -5,14 +5,18 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Галерея</title>
-   <link rel="stylesheet" href="./css/gallery.css">
+   <link rel="stylesheet" href="../css/gallery.css">
 </head>
 <body>
+    <div class="modal">
+        <img class="modal-image" src="" alt="">
+        <p class="modal-text">Some text</p>
+    </div>
    <div class="overlay"></div>
    <div class="container">
-      <header class="header container__header header_flex_no-background">
+      <header class="header container__header header_flex">
          <div class="logo header__logo">
-             <img src="./image/logo2.svg" srcset="./image/logo2.svg" class="logo__img">
+             <img src="../image/logo-white.png" class="logo__img">
          </div>
          <button class="menu-burger header__menu-burger ">
              <span></span>
@@ -29,11 +33,24 @@
              </ul>
          </nav>
      </header>
-     <main class="main">
+     <main class="main container__main">
+        <div class="gallery-container container__gallery-container" id="gallery-container">
 
+        </div>
      </main>
+     <footer class="footer container__footer">
+        <div class="socials footer__socials">
+            <a href="https://vk.com/nataiiia.mironova"><img src="../image/vk_logo.png" alt="VK"></a>
+        </div>
+        <div class="contacts">
+            <p class="contacts__element">Написать письмо:</p>
+            <p class="contacts__element">tashik.art7@gmail.com</p>
+        </div>
+    </footer>
    </div>
-   <script src="./js/header_scroll.js"></script>
-   <script src="./js/menu_transformation.js"></script>
+   <!-- <script src="../js/header_scroll.js"></script> -->
+   <script src="/js/menu_transformation.js"></script>
+   <script src="/js/xml_handler_gallery.js"></script>
+   <script src="/js/image-popup.js"></script>
 </body>
 </html>

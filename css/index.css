@@ -44,6 +44,14 @@
     background-color: #6A253E;
   }
 }
+@font-face {
+  font-family: "Oswald";
+  src: url("../css/font/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Andada Pro";
+  src: url("../css/font/AndadaPro-VariableFont_wght.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -79,14 +87,6 @@
   transition: all 0.3s;
 }
 
-@font-face {
-  font-family: "Oswald";
-  src: url("../css/font/Oswald-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Andada Pro";
-  src: url("../css/font/AndadaPro-VariableFont_wght.ttf") format("truetype");
-}
 .header {
   background: #BFB88C;
   transition: background 0.2s ease-in-out;
@@ -112,20 +112,17 @@
 }
 .header__logo {
   margin: 0px 36px 0px 0px;
-  transform: translateY(55px);
 }
 .header__nav {
   padding-right: 20px;
 }
 
 .logo {
-  max-width: 256px;
+  max-width: 85px;
 }
 .logo__img {
   width: 100%;
   height: 100%;
-  filter: invert(100%);
-  margin: -5px -20px 0 0;
 }
 
 .menu-burger {
