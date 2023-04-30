@@ -1,10 +1,11 @@
-const midWidth = 768;
+const appearsOnWidth = 768;
 const slideInterval = 4000;
-const marginRight = 10;
+const smallScreen = 425;
+const marginRight = screen.width > smallScreen ? 20 : 10;
 addEventListener("DOMContentLoaded", () => {
    const slider = document.querySelector(".slider");
    const sliderLine = document.querySelector(".slider__line");
-   if(slider.getAttribute("mobileOnly") !== null && screen.width >= midWidth) {
+   if(slider.getAttribute("mobileOnly") !== null && screen.width >= appearsOnWidth) {
       const innerContainer = slider.parentNode;
       innerContainer.innerHTML = sliderLine.innerHTML;
    }
@@ -13,6 +14,7 @@ addEventListener("DOMContentLoaded", () => {
    const maxOffset = sliderLine.offsetWidth -
       sliderLine.offsetWidth/sliderLineElement.offsetWidth -
       sliderLineElement.offsetWidth;
+   console.log(sliderLineElement.offsetWidth)
    let offset = 0;
    function slideToNext() {
       offset += sliderLineElement.offsetWidth + marginRight;

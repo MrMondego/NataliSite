@@ -261,18 +261,18 @@
 .about {
   text-transform: uppercase;
   word-wrap: normal;
-  max-width: 30vw;
+  max-width: 25vw;
 }
 .about__title {
   font-weight: 400;
-  font-size: calc(45px + 39 * ((100vw - 320px) / 960));
+  font-size: calc(31px + 28 * ((100vw - 320px) / 960));
   line-height: 1em;
   text-align: left;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 20px 0px;
 }
 .about__subtitle {
   font-weight: 300;
-  font-size: calc(30px + 15 * ((100vw - 320px) / 960));
+  font-size: calc(21px + 11 * ((100vw - 320px) / 960));
   line-height: 1.2em;
   text-align: left;
 }
@@ -484,6 +484,9 @@
     opacity: 1;
     visibility: visible;
     transition: all 0.3s;
+  }
+  .gallery-category {
+    width: 300px;
   }
 }
 @media (max-width: 425px) {
