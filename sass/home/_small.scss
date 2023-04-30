@@ -1,4 +1,9 @@
 @media (max-width: 425px) {
+   .top {
+      &__bgWrapper {
+         background-position: 53% 100%;
+      }
+   }
    .nav {
       &__menu {
          font-size: 20px;

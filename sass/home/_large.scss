@@ -7,13 +7,16 @@
     .header {
         z-index: 100;
         &_flex {
-            justify-content: center;
+            justify-content: flex-start;
             &_no-background {
-                justify-content: center;
+                justify-content: flex-start;
             }
         }
         &__nav {
             padding: 0;
+        }
+        &__logo {
+            margin-left: 5%;
         }
     }
     .nav {

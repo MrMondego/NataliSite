@@ -7,16 +7,16 @@
 //    animation: background-change 9s linear infinite;
    &__about {
        padding-left: 10vw;
-       padding-top: 14.5vh;
+       padding-top: 20.5vh;
    }
    &__bgWrapper {
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-position: 43% 100%;
+    background-position: 60% 0%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 200vw 100vh;
     transition: background-image 3s;
    }
 }
@@ -33,7 +33,7 @@
 .about {
    text-transform: uppercase;
    word-wrap: normal;
-   max-width: 25vw;
+   max-width: 20vw;
    &__title {
        font-weight: 400;
        @include mixins.adaptiv-font(59, 31);
@@ -43,6 +43,7 @@
    }
    &__subtitle {
        font-weight: 300;
+       text-transform: none;
        @include mixins.adaptiv-font(32, 21);
        line-height: 1.2em;
        text-align: left;
