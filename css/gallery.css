@@ -44,6 +44,54 @@
     background-color: #6A253E;
   }
 }
+@-webkit-keyframes background-change {
+  0% {
+    background-image: url("../image/top_background-1.jpg");
+  }
+  25% {
+    background-image: url("../image/top_background-1.jpg");
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  26% {
+    background-image: url("../image/top_background-2.jpg");
+  }
+  50% {
+    background-image: url("../image/top_background-2.jpg");
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  51% {
+    background-image: url("../image/top_background-3.jpg");
+  }
+  100% {
+    background-image: url("../image/top_background-1.jpg");
+  }
+}
+@keyframes background-change {
+  0% {
+    background-image: url("../image/top_background-1.jpg");
+  }
+  25% {
+    background-image: url("../image/top_background-1.jpg");
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  26% {
+    background-image: url("../image/top_background-2.jpg");
+  }
+  50% {
+    background-image: url("../image/top_background-2.jpg");
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  51% {
+    background-image: url("../image/top_background-3.jpg");
+  }
+  100% {
+    background-image: url("../image/top_background-1.jpg");
+  }
+}
 @font-face {
   font-family: "Oswald";
   src: url("../css/font/Oswald-VariableFont_wght.ttf") format("truetype");

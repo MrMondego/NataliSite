@@ -44,6 +44,54 @@
     background-color: #6A253E;
   }
 }
+@-webkit-keyframes background-change {
+  0% {
+    background-image: url("../image/top_background-1.jpg");
+  }
+  25% {
+    background-image: url("../image/top_background-1.jpg");
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  26% {
+    background-image: url("../image/top_background-2.jpg");
+  }
+  50% {
+    background-image: url("../image/top_background-2.jpg");
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  51% {
+    background-image: url("../image/top_background-3.jpg");
+  }
+  100% {
+    background-image: url("../image/top_background-1.jpg");
+  }
+}
+@keyframes background-change {
+  0% {
+    background-image: url("../image/top_background-1.jpg");
+  }
+  25% {
+    background-image: url("../image/top_background-1.jpg");
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  26% {
+    background-image: url("../image/top_background-2.jpg");
+  }
+  50% {
+    background-image: url("../image/top_background-2.jpg");
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  51% {
+    background-image: url("../image/top_background-3.jpg");
+  }
+  100% {
+    background-image: url("../image/top_background-1.jpg");
+  }
+}
 @font-face {
   font-family: "Oswald";
   src: url("../css/font/Oswald-VariableFont_wght.ttf") format("truetype");
@@ -181,13 +229,32 @@
 .top {
   min-height: 95vh;
   color: #fff;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, transparent 100%), url("../image/top_background.jpg") fixed no-repeat;
-  background-position: 43% 100%;
-  background-size: cover;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, transparent 100%);
 }
 .top__about {
   padding-left: 10vw;
   padding-top: 14.5vh;
+}
+.top__bgWrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-image 3s;
+}
+
+.bg-1 {
+  background-image: url("../image/top_background-1.jpg");
+}
+
+.bg-2 {
+  background-image: url("../image/top_background-2.jpg");
+}
+
+.bg-3 {
+  background-image: url("../image/top_background-3.jpg");
 }
 
 .about {
@@ -209,6 +276,9 @@
   text-align: left;
 }
 
+.main {
+  background: #fff;
+}
 .main__great-text {
   position: relative;
   font-size: calc(20px + 10 * ((100vw - 320px) / 960));

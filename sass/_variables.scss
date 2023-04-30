@@ -20,3 +20,24 @@ $cursor-color: #6A253E;
     99% { background-color: transparent; }
     100%  { background-color: $cursor-color; }
 }
+@keyframes background-change {
+    0% { background-image: url("../image/top_background-1.jpg"); }
+    25% {
+        background-image: url("../image/top_background-1.jpg");
+        animation-delay: 3s;
+    }
+    26% {
+        background-image: url("../image/top_background-2.jpg");
+    }
+    50% {
+        background-image: url("../image/top_background-2.jpg");
+        animation-delay: 3s;
+    }
+    51% {
+        background-image: url("../image/top_background-3.jpg");
+    }
+    
+    100% {
+        background-image: url("../image/top_background-1.jpg");
+    }
+}

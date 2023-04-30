@@ -1,15 +1,35 @@
 @use "../mixins";
+@use "../variables" as vars;
 .top {
    min-height: 95vh;
    color: #fff;
-   background: linear-gradient(90deg, rgba(0,0,0,0.35) 0%, transparent 100%), url("../image/top_background.jpg") fixed no-repeat,;
-   background-position: 43% 100%;
-   background-size: cover;
+   background: linear-gradient(90deg, rgba(0,0,0,0.35) 0%, transparent 100%);
+//    animation: background-change 9s linear infinite;
    &__about {
        padding-left: 10vw;
        padding-top: 14.5vh;
    }
+   &__bgWrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    // background-position: 43% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-image 3s;
+   }
 }
+.bg-1 {
+    background-image: url("../image/top_background-1.jpg");
+}
+.bg-2 {
+    background-image: url("../image/top_background-2.jpg");
+}
+.bg-3 {
+    background-image: url("../image/top_background-3.jpg");
+}
+
 .about {
    text-transform: uppercase;
    word-wrap: normal;

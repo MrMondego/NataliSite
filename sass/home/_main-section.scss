@@ -1,6 +1,7 @@
 @use "../mixins";
 @use "../variables" as vars;
 .main {
+   background: #fff;
    &__great-text {
        position: relative;
        @include mixins.adaptiv-font(30, 20);
