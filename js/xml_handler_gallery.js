@@ -1,6 +1,7 @@
-const photosFile = 'birds.xml';
-// const pathToFile = "/" + window.location.pathname.split("/")[1] + '/xml/';
-const pathToFile = "/xml/";
+const photosFile = 'birds.xml',
+      hostName = window.location.pathname.split("/")[1],
+      pathToFile = (hostName !== 'html' ? "/" + hostName : '') + '/xml/';
+console.log(window.location.pathname);
 
 const imgUrls = [];
 const imgDescriptions = [];
