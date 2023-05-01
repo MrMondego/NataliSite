@@ -59,6 +59,7 @@
        height: 3px;
        background-color: #fff;
        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+       transition: transform 0.4s;
    }
    span {
        position: absolute;
@@ -69,10 +70,25 @@
        height: 3px;
        background-color: #fff;
        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+       transition: transform 0.4s;
    }
    &::after {
        top: auto;
        bottom: 0;
+   }
+   &.is-active {
+    span {
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+    &::before {
+        transform: rotate(135deg) translate(9px, -8px);
+        box-shadow: none;
+    }
+    &::after {
+        transform: rotate(45deg) translate(-7px, -7px);
+        box-shadow: none;
+    }
    }
 }
 .nav {
@@ -94,5 +110,9 @@
    &__link {
        text-decoration: none;
        color:#fff;
+       transition: color 0.3s ease;
+       &:hover {
+        color: rgb(255, 195, 220);
+       }
    }
 }

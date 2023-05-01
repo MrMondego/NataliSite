@@ -191,6 +191,7 @@
   height: 3px;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s;
 }
 .menu-burger span {
   position: absolute;
@@ -201,10 +202,23 @@
   height: 3px;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s;
 }
 .menu-burger::after {
   top: auto;
   bottom: 0;
+}
+.menu-burger.is-active span {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+.menu-burger.is-active::before {
+  transform: rotate(135deg) translate(9px, -8px);
+  box-shadow: none;
+}
+.menu-burger.is-active::after {
+  transform: rotate(45deg) translate(-7px, -7px);
+  box-shadow: none;
 }
 
 .nav__menu {
@@ -224,6 +238,10 @@
 .nav__link {
   text-decoration: none;
   color: #fff;
+  transition: color 0.3s ease;
+}
+.nav__link:hover {
+  color: rgb(255, 195, 220);
 }
 
 .footer {
