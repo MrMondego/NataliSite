@@ -1,8 +1,12 @@
 const photosFile = 'birds.xml';
-const pathToFile = "/" + window.location.pathname.split("/")[1] + '/xml/';
+// const pathToFile = "/" + window.location.pathname.split("/")[1] + '/xml/';
+const pathToFile = "/xml/";
 
 const imgUrls = [];
 const imgDescriptions = [];
+const modal = document.querySelector('.modal');
+const modalImage = document.querySelector('.modal-image');
+const modalText = document.querySelector('.modal-text');
 
 fetch(pathToFile + photosFile)
   .then(response => response.text())
@@ -21,9 +25,6 @@ fetch(pathToFile + photosFile)
     });
    //  console.log(imgUrls,imgDescriptions)
 
-   const modal = document.querySelector('.modal');
-   const modalImage = document.querySelector('.modal-image');
-   const modalText = document.querySelector('.modal-text');
    const galleryOverlay = document.createElement('div');
    galleryOverlay.classList.add('gallery__overlay');
 
@@ -39,21 +40,27 @@ fetch(pathToFile + photosFile)
          modalImage.setAttribute('alt', alt);
          modalText.textContent = imgDescriptions[i];
          modal.style.display = 'block';
-         modal.style.opacity = "1";
+         setTimeout(() => modal.classList.toggle("opaque"), 1);
          document.body.appendChild(galleryOverlay);
          galleryOverlay.style.display = 'block';
-         lockScroll();
+         toggleLockScroll();
       });
       // const pElement = document.createElement('p');
       // pElement.textContent = imgDescriptions[i];
       container.appendChild(imgElement);
       // container.appendChild(pElement);
     }
-    galleryOverlay.addEventListener('click', function() {
+    galleryOverlay.addEventListener('click', () => {
       modal.style.display = 'none';
       galleryOverlay.style.display = 'none';
-      modal.style.opacity = "0";
+      modal.classList.toggle("opaque");
       unlockScroll();
     });
+    modal.addEventListener("click", () => {
+      modal.style.display = 'none';
+      galleryOverlay.style.display = 'none';
+      modal.classList.toggle("opaque");
+      unlockScroll();
+    })
   })
   .catch(error => console.log(error));
