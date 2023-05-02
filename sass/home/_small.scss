@@ -22,4 +22,11 @@
          margin-right: 10px;
       }
    }
+   .footer {
+      justify-content: center;
+      :not(:last-child) {
+         padding-bottom: 20px;
+         flex-basis: 100%;
+      }
+   }
 }

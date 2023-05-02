@@ -248,19 +248,50 @@
   background: #734D4D;
   width: 100%;
   color: #fff;
+  font-family: "Andada Pro", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer__text-information {
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.socials__element {
+  transition: filter 0.3s ease;
+}
+.socials__element:hover {
+  filter: brightness(66%) sepia(100%) hue-rotate(271deg);
 }
 
 .container__footer {
-  padding: 45px 54px;
+  padding: 20px 10px;
 }
 
-.contacts {
-  font-family: "Andada Pro" sans-serif;
-  font-weight: 200;
-  font-size: 20px;
-}
 .contacts__element {
   letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.footer__menu {
+  list-style-type: none;
+}
+.footer__menu_flex-column {
+  flex-direction: column;
+  font-size: 18px;
+}
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+.footer__link:hover {
+  color: rgb(255, 195, 220);
 }
 
 .modal {
@@ -478,6 +509,13 @@
   .gallery-category:not(:last-child) {
     margin: 0;
     margin-right: 10px;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer :not(:last-child) {
+    padding-bottom: 20px;
+    flex-basis: 100%;
   }
 }
 .container__main {
