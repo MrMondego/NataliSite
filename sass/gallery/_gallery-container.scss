@@ -25,19 +25,20 @@
       // height: 100%;
    }
    &__close-button {
+      display: none;
       position: fixed;
       top: 3%; 
       left: 50%;
       width: 30px;
       height: 30px;
-      border: 3px solid rgb(206, 53, 53);
+      // border: 3px solid rgb(206, 53, 53);
       cursor: pointer;
       &::before, &::after {
          content:'';
          position: absolute;
          right: 0;
          top: 11px;
-         width: 24px;
+         width: 30px;
          height: 3px;
          background: rgb(206, 53, 53);
          transform: rotate(45deg);
@@ -121,6 +122,9 @@
    .modal {
       margin-top: 10%;
       max-width: 90vw;
+      &__close-button {
+         display: block;
+      }
    }
 }
 @media (max-width: 400px) {
