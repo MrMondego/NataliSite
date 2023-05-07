@@ -17,15 +17,12 @@
     z-index: -1;
     .bg-1 {
         @include mixins.image-background();
-        z-index: 1;
     }
     .bg-2 {
         @include mixins.image-background();
-        z-index: 2;
     }
     .bg-3 {
         @include mixins.image-background();
-        z-index: 3;
     }
     // background: url('../image/top_background-1.jpg') no-repeat center center fixed,
     //             url('../image/top_background-2.jpg') no-repeat center center fixed,
@@ -61,18 +58,18 @@
     //     transition: background-image 3s;
     // }
 }
-.bg-1 {
-    background-image: url("../image/top_background-1.jpg");
-    // background-position: 0% 0%;
-}
-.bg-2 {
-    background-image: url("../image/top_background-2.jpg");
-    // background-position: 0% 0%;
-}
-.bg-3 {
-    background-image: url("../image/top_background-3.jpg");
-    // background-position: 0% 0%;
-}
+// .bg-1 {
+//     background-image: url("../image/top_background-1.jpg");
+//     // background-position: 0% 0%;
+// }
+// .bg-2 {
+//     background-image: url("../image/top_background-2.jpg");
+//     // background-position: 0% 0%;
+// }
+// .bg-3 {
+//     background-image: url("../image/top_background-3.jpg");
+//     // background-position: 0% 0%;
+// }
 
 .about {
    text-transform: uppercase;
