@@ -12,10 +12,10 @@
 }
 @-webkit-keyframes blinks {
   0% {
-    background-color: #6A253E;
+    background-color: #fff;
   }
   49% {
-    background-color: #6A253E;
+    background-color: #fff;
   }
   50% {
     background-color: transparent;
@@ -24,15 +24,15 @@
     background-color: transparent;
   }
   100% {
-    background-color: #6A253E;
+    background-color: #fff;
   }
 }
 @keyframes blinks {
   0% {
-    background-color: #6A253E;
+    background-color: #fff;
   }
   49% {
-    background-color: #6A253E;
+    background-color: #fff;
   }
   50% {
     background-color: transparent;
@@ -41,7 +41,7 @@
     background-color: transparent;
   }
   100% {
-    background-color: #6A253E;
+    background-color: #fff;
   }
 }
 @-webkit-keyframes background-change {
@@ -300,6 +300,7 @@
   width: -moz-fit-content;
   width: fit-content;
   max-width: 70vw;
+  flex-direction: column;
   margin: 2% auto 0 auto;
   height: auto;
   position: fixed;
@@ -315,13 +316,16 @@
 .modal.opaque {
   opacity: 1;
 }
+.modal__content {
+  flex: 1 1 100%;
+}
 .modal__close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: fixed;
+  top: 3%;
+  left: 50%;
   width: 30px;
   height: 30px;
-  border: 3px dashed rgb(206, 53, 53);
+  border: 3px solid rgb(206, 53, 53);
   cursor: pointer;
 }
 .modal__close-button::before, .modal__close-button::after {
@@ -347,12 +351,13 @@
 .modal-text {
   font-family: "Andada Pro" sans-serif;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 20pt;
+  max-width: 100%;
   color: #000;
-  background-color: rgb(207, 207, 207);
+  background-color: #fff;
   text-align: center;
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  padding: 20px 20px;
 }
 
 .gallery__overlay {

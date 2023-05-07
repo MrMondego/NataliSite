@@ -19,7 +19,7 @@ fetch(pathToFile + photosFile)
       const descriptionElement = photoElement.querySelector('description');
       if (urlElement && descriptionElement) {
         const url = urlElement.textContent.trim();
-        const description = descriptionElement.textContent.trim();
+        const description = descriptionElement.innerHTML;
         imgUrls.push(url);
         imgDescriptions.push(description);
       }
@@ -39,8 +39,8 @@ fetch(pathToFile + photosFile)
          const alt = evt.target.getAttribute('alt');
          modalImage.setAttribute('src', src);
          modalImage.setAttribute('alt', alt);
-         modalText.textContent = imgDescriptions[i];
-         modal.style.display = 'block';
+         modalText.innerHTML = imgDescriptions[i];
+         modal.style.display = 'flex';
          setTimeout(() => modal.classList.toggle("opaque"), 1);
          document.body.appendChild(galleryOverlay);
          galleryOverlay.style.display = 'block';
@@ -57,11 +57,5 @@ fetch(pathToFile + photosFile)
       modal.classList.toggle("opaque");
       unlockScroll();
     });
-    modal.addEventListener("click", () => {
-      modal.style.display = 'none';
-      galleryOverlay.style.display = 'none';
-      modal.classList.toggle("opaque");
-      unlockScroll();
-    })
   })
   .catch(error => console.log(error));

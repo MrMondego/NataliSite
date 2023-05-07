@@ -24,7 +24,7 @@
             <ul class="nav__menu nav__menu_flex">
                 <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Новости</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Галерея</a></li>
+                <li class="nav__item"><a class="nav__link" href="#gallery-previews">Галерея</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Магазин</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Школа живописи</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Написать письмо</a></li>
@@ -35,9 +35,9 @@
     <div class="top">
         <div class="bgWrapper">
             <!-- <div class="bgWrapper__bg"> -->
-                <img src="./image/top_background-1.jpg" alt="background" class="bg-1 active">
-                <img src="./image/top_background-2.jpg" alt="background" class="bg-2">
-                <img src="./image/top_background-3.jpg" alt="background" class="bg-3">
+                <img src="./image/top_background-1.jpg" alt="background" class="bgWrapper__bg active">
+                <img src="./image/top_background-2.jpg" alt="background" class="bgWrapper__bg">
+                <img src="./image/top_background-3.jpg" alt="background" class="bgWrapper__bg bgWrapper__bg_shift">
             <!-- </div> -->
         </div>
         <div class="top__about about">
@@ -46,9 +46,11 @@
         </div>
     </div>
     <main class="main">
-        <section class="main__great-text main__great-text_outline">
+        <section class="main__great-text">
             <p class="typing-container main__typing-container"><span class="typing-container__typed-text"></span><span class="typing-cursor"></span></p>
+            <section class="main__branches"></section>
         </section>
+        <a name="gallery-previews"></a>
         <section class="gallery-previews main__gallery-previews">
             <div class="slider" mobileOnly>
                 <div class="slider__line">
