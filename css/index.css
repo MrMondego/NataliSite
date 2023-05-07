@@ -274,7 +274,6 @@
           user-select: none;
   opacity: 0;
   transition: opacity 3s;
-  z-index: 1;
 }
 .bgWrapper .bg-1.active {
   opacity: 1;
@@ -293,7 +292,6 @@
           user-select: none;
   opacity: 0;
   transition: opacity 3s;
-  z-index: 2;
 }
 .bgWrapper .bg-2.active {
   opacity: 1;
@@ -312,22 +310,9 @@
           user-select: none;
   opacity: 0;
   transition: opacity 3s;
-  z-index: 3;
 }
 .bgWrapper .bg-3.active {
   opacity: 1;
-}
-
-.bg-1 {
-  background-image: url("../image/top_background-1.jpg");
-}
-
-.bg-2 {
-  background-image: url("../image/top_background-2.jpg");
-}
-
-.bg-3 {
-  background-image: url("../image/top_background-3.jpg");
 }
 
 .about {
