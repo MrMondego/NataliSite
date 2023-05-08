@@ -294,6 +294,12 @@
   color: rgb(255, 195, 220);
 }
 
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 .modal {
   display: none;
   width: -webkit-fit-content;
@@ -351,7 +357,7 @@
 .modal-text {
   font-family: "Andada Pro" sans-serif;
   font-weight: 200;
-  font-size: 20pt;
+  font-size: calc(19px + 4 * ((100vw - 320px) / 960));
   max-width: 100%;
   color: #000;
   background-color: #fff;
@@ -496,6 +502,9 @@
   }
   .gallery-category {
     width: 300px;
+  }
+  .fixed-bottom {
+    position: static;
   }
 }
 @media (max-width: 425px) {

@@ -1,8 +1,8 @@
-@use "../mixins";
-@use "../variables" as vars;
-@use "../fonts";
+// @use "../mixins";
+// @use "../variables" as vars;
+// @use "../fonts";
 
-@use "header";
+@use "../components/header";
+@use "../components/footer";
 @use "top-section";
 @use "main-section";
-@use "footer";

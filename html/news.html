@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Новости</title>
+   <link rel="stylesheet" href="../css/news.css">
+</head>
+<body>
+<div class="overlay"></div>
+<div class="modal-post">
+   <div class="modal-post__content post-content">
+      <h1 class="post-content__title">Заголовок</h1>
+      <h2 class="post-content__date post-date">00.00.0000</h2>
+      <img src="" alt="" class="post-content__img">
+      <div class="post-content__text-wrapper">
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestiae, tempora inventore ex voluptates velit hic esse laboriosam odio fugit, architecto corrupti est earum aspernatur. Minus quam iste voluptate.
+         Laboriosam voluptate fugit et officia tempore eaque nihil repudiandae officiis magni neque nostrum molestias incidunt odio veniam eum, in at. Ab cupiditate nostrum optio vel esse, minima odit quam doloribus.
+         Maxime, minus veritatis nostrum repellendus, laborum temporibus inventore vero consequatur sit minima officiis consequuntur sunt neque labore numquam sapiente libero! Possimus accusantium vel repellat ipsam ratione dicta itaque beatae in.</p>
+      </div>
+   </div>
+</div>
+<div class="container">
+   <header class="header container__header header_flex">
+        <div class="logo header__logo">
+            <img src="../image/logo-white.png" class="logo__img" alt="logo">
+        </div>
+        <button class="menu-burger header__menu-burger">
+            <span></span>
+        </button>
+        <nav class="header__nav nav">
+            <ul class="nav__menu nav__menu_flex">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+                <li class="nav__item"><a class="nav__link" href="../index.html#gallery-previews">Галерея</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Магазин</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Школа живописи</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Написать письмо</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main container__main">
+      <section class="news-container main__news-container">
+         <div class="post news-container__post">
+            <a href="" class="post-link" onclick="e => {e.preventDeafult(); document.querySelector('.modal-post').style.display = 'block'}">
+               <div class="post-row">
+                  <img src="../image/section-1.png" alt="" srcset="" class="post-row__img">
+                  <div class="post-row__text-wrapper">
+                     <h3 class="padding-bottom">Заголовок новости</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni fuga soluta minus a ipsum esse neque id voluptates quis quia et fugiat illo, officiis in natus commodi at ratione.</p>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis blanditiis, aliquam voluptas dolorem facilis quo commodi nulla illo eum, autem non magni. Quas, sapiente ratione perferendis voluptatum nulla modi sequi.
+                     Officia, velit! Omnis illum earum explicabo quo neque magni voluptatibus excepturi assumenda odit. Natus consequatur cum deserunt dolore aspernatur obcaecati officiis quo eos vitae sequi, atque placeat accusamus, culpa dolorem.</p>
+                     <p class="post-date">2000.00.00</p>
+                  </div>
+               </div>
+            </a>
+         </div>
+         <div class="post news-container__post">
+            <a href="" class="post-link">
+               <div class="post-row">
+                  <img src="../image/section-1.png" alt="" srcset="" class="post-row__img">
+                  <div class="post-row__text-wrapper">
+                     <h3 class="padding-bottom">Заголовок новости</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni fuga soluta minus a ipsum esse neque id voluptates quis quia et fugiat illo, officiis in natus commodi at ratione.</p>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis blanditiis, aliquam voluptas dolorem facilis quo commodi nulla illo eum, autem non magni. Quas, sapiente ratione perferendis voluptatum nulla modi sequi.
+                     Officia, velit! Omnis illum earum explicabo quo neque magni voluptatibus excepturi assumenda odit. Natus consequatur cum deserunt dolore aspernatur obcaecati officiis quo eos vitae sequi, atque placeat accusamus, culpa dolorem.</p>
+                     <p class="post-date">2000.00.00</p>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </section>
+    </main>
+    <footer class="footer container__footer">
+      <div class="socials footer__socials">
+          <p class="footer__text-information">Социальные сети</p>
+          <a href="https://vk.com/nataiiia.mironova"><img src="../image/vk_logo.png" class="socials__element" alt="VK"></a>
+      </div>
+      <div class="contacts">
+          <p class="footer__text-information">Написать письмо:</p>
+          <p class="contacts__element">tashik.art7@gmail.com</p>
+      </div>
+      <div class="footer__information">
+          <p class="footer__text-information">Информация</p>
+          <nav class="footer__nav">
+              <ul class="footer__menu footer__menu_flex-column">
+                  <li class="footer__item"><a class="footer__link" href="../index.html">Главная</a></li>
+                  <li class="footer__item"><a class="footer__link" href="news.html">Новости</a></li>
+                  <li class="footer__item"><a class="footer__link" href="../index.html#gallery-previews">Галерея</a></li>
+                  <li class="footer__item"><a class="footer__link" href="">Магазин</a></li>
+                  <li class="footer__item"><a class="footer__link" href="">Школа живописи</a></li>
+                  <li class="footer__item"><a class="footer__link" href="">Написать письмо</a></li>
+                  <li class="footer__item"><a class="footer__link" href="">Контакты</a></li>
+              </ul>
+          </nav>
+      </div>
+  </footer>
+</div>
+<script src="../js/menu_transformation.js"></script>
+<script>
+   if( document.querySelector(".footer").offsetTop <= window.innerHeight ){		
+      document.querySelector(".footer").classList.add("fixed-bottom");
+   }
+</script>
+</body>
+</html>

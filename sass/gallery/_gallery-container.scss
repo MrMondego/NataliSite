@@ -1,5 +1,6 @@
 @use "../fonts" as *;
 @use "../variables" as vars;
+@use "../mixins" as mixs;
 .modal {
    display: none;
    width: fit-content;
@@ -61,7 +62,7 @@
  .modal-text {
    font-family: "Andada Pro" sans-serif;
    font-weight: 200;
-   font-size: 20pt;
+   @include mixs.adaptiv-font(23, 19);
    max-width: 100%;
    color: #000;
    background-color: #fff;

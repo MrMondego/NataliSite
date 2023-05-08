@@ -1,6 +1,6 @@
 @use "../prevent-default";
-@use "../home/header";
-@use "../home/footer";
+@use "../components/header";
+@use "../components/footer";
 
 @use "gallery-container";
 @use "../home/large";
