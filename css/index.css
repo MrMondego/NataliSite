@@ -369,10 +369,8 @@
   text-align: center;
   font-weight: 400;
   color: #fff;
-  background: #734D4D;
   background-size: cover;
   background-position: 20% 50%;
-  padding: 20px 0px 0px 0px;
   margin-bottom: 137px;
 }
 .main__great-text_outline::before {
@@ -396,6 +394,8 @@
 }
 
 .typing-container {
+  position: relative;
+  z-index: 1;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -418,16 +418,28 @@
 .branches {
   width: 100%;
   height: 300px;
-  background: url("../../image/section-1_background.png") left no-repeat, #fff;
+}
+.branches__background {
+  background: linear-gradient(180deg, #734D4D 4%, transparent);
+  width: 100%;
+  height: 450px;
+  position: relative;
+  top: -47%;
+}
+.branches__bird {
+  background: url("../image/section-1_background.png") left no-repeat;
+  width: 100%;
+  height: inherit;
+  position: absolute;
   background-size: contain;
-  box-shadow: 0 0 20px 30px #fff;
 }
 .branches__text {
-  background: url("../../image/section-1_text.png") top right no-repeat;
+  background: url("../image/section-1_text.png") top right no-repeat;
+  position: absolute;
   width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-position: 50%;
+  height: inherit;
+  background-size: 113%;
+  background-position: 127% 43%;
 }
 
 .slider {
@@ -568,6 +580,9 @@
     visibility: visible;
     transition: all 0.3s;
   }
+  .branches__background {
+    top: -40%;
+  }
   .gallery-category {
     width: 300px;
   }
@@ -594,6 +609,9 @@
   .gallery-category:not(:last-child) {
     margin: 0;
     margin-right: 10px;
+  }
+  .branches__background {
+    top: -49%;
   }
   .footer {
     justify-content: center;

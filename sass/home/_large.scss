@@ -62,6 +62,11 @@
         visibility: visible;
         transition: all 0.3s;
     }
+    .branches {
+        &__background {
+            top: -40%
+        }
+    }
     .gallery-category {
         width: 300px;
     }

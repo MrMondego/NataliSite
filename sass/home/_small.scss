@@ -22,6 +22,11 @@
          margin-right: 10px;
       }
    }
+   .branches {
+      &__background {
+          top: -49%
+      }
+  }
    .footer {
       justify-content: center;
       :not(:last-child) {

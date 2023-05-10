@@ -364,6 +364,9 @@
     visibility: visible;
     transition: all 0.3s;
   }
+  .branches__background {
+    top: -40%;
+  }
   .gallery-category {
     width: 300px;
   }
@@ -390,6 +393,9 @@
   .gallery-category:not(:last-child) {
     margin: 0;
     margin-right: 10px;
+  }
+  .branches__background {
+    top: -49%;
   }
   .footer {
     justify-content: center;
