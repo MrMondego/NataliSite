@@ -364,8 +364,9 @@
     visibility: visible;
     transition: all 0.3s;
   }
-  .branches__background {
-    top: -40%;
+  .branches__text {
+    background-size: contain;
+    background-position: initial;
   }
   .gallery-category {
     width: 300px;
@@ -394,8 +395,12 @@
     margin: 0;
     margin-right: 10px;
   }
-  .branches__background {
-    top: -49%;
+  .branches__bird {
+    background-size: 158%;
+  }
+  .branches__text {
+    background-size: 140%;
+    background-position: 100% -34%;
   }
   .footer {
     justify-content: center;

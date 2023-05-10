@@ -371,7 +371,6 @@
   color: #fff;
   background-size: cover;
   background-position: 20% 50%;
-  margin-bottom: 137px;
 }
 .main__great-text_outline::before {
   content: "";
@@ -394,7 +393,9 @@
 }
 
 .typing-container {
-  position: relative;
+  display: none;
+  position: absolute;
+  left: 35%;
   z-index: 1;
   max-width: 90%;
   margin: 0 auto;
@@ -417,14 +418,20 @@
 
 .branches {
   width: 100%;
-  height: 300px;
+  height: 200px;
+}
+.branches::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: hsl(0deg, 33%, 24%);
 }
 .branches__background {
   background: linear-gradient(180deg, #734D4D 4%, transparent);
   width: 100%;
-  height: 450px;
+  height: 200px;
   position: relative;
-  top: -47%;
 }
 .branches__bird {
   background: url("../image/section-1_background.png") left no-repeat;
@@ -438,8 +445,10 @@
   position: absolute;
   width: 100%;
   height: inherit;
-  background-size: 113%;
-  background-position: 127% 43%;
+  background-size: 86%;
+  background-position: -102% 29%;
+  filter: brightness(0);
+  z-index: 1;
 }
 
 .slider {
@@ -580,8 +589,9 @@
     visibility: visible;
     transition: all 0.3s;
   }
-  .branches__background {
-    top: -40%;
+  .branches__text {
+    background-size: contain;
+    background-position: initial;
   }
   .gallery-category {
     width: 300px;
@@ -610,8 +620,12 @@
     margin: 0;
     margin-right: 10px;
   }
-  .branches__background {
-    top: -49%;
+  .branches__bird {
+    background-size: 158%;
+  }
+  .branches__text {
+    background-size: 140%;
+    background-position: 100% -34%;
   }
   .footer {
     justify-content: center;

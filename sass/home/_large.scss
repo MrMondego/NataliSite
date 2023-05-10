@@ -63,8 +63,9 @@
         transition: all 0.3s;
     }
     .branches {
-        &__background {
-            top: -40%
+        &__text {
+            background-size: contain;
+            background-position: initial;
         }
     }
     .gallery-category {

@@ -23,8 +23,12 @@
       }
    }
    .branches {
-      &__background {
-          top: -49%
+      &__bird {
+         background-size: 158%;
+      }
+      &__text {
+         background-size: 140%;
+         background-position: 100% -34%;
       }
   }
    .footer {
