@@ -1,13 +1,12 @@
-const photosFile = 'birds.xml',
-      hostName = window.location.pathname.split("/")[1],
+const hostName = window.location.pathname.split("/")[1],
       pathToFile = (hostName !== 'html' ? "/" + hostName : '') + '/xml/';
-console.log(window.location.pathname);
 
 const imgUrls = [];
 const imgDescriptions = [];
 const modal = document.querySelector('.modal');
 const modalImage = document.querySelector('.modal-image');
 const modalText = document.querySelector('.modal-text');
+let timeout = -1;
 
 fetch(pathToFile + photosFile)
   .then(response => response.text())
@@ -40,6 +39,7 @@ fetch(pathToFile + photosFile)
          modalImage.setAttribute('src', src);
          modalImage.setAttribute('alt', alt);
          modalText.innerHTML = imgDescriptions[i];
+         clearTimeout(timeout);
          modal.style.display = 'flex';
          setTimeout(() => modal.classList.toggle("opaque"), 1);
          document.body.appendChild(galleryOverlay);
@@ -52,10 +52,10 @@ fetch(pathToFile + photosFile)
       // container.appendChild(pElement);
     }
     galleryOverlay.addEventListener('click', () => {
-      modal.style.display = 'none';
-      galleryOverlay.style.display = 'none';
       modal.classList.toggle("opaque");
       unlockScroll();
+      galleryOverlay.style.display = 'none';
+      timeout = setTimeout(() => modal.style.display = 'none', 700);
     });
   })
   .catch(error => console.log(error));

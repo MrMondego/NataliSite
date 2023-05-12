@@ -1,7 +1,9 @@
 .header {
-   background: #BFB88C;
+//    background: #BFB88C;
+   background: #c1b676;
    transition: background 0.2s ease-in-out;
    max-height: 70px;
+   height: 70px;
    z-index: 10;
    width: 100%;
    &_flex {
@@ -38,8 +40,12 @@
    &__img {
        width: 100%;
        height: 100%;
-    //    filter: invert(100%);
+       filter: drop-shadow(2px 0px 3px hsl(53, 32%, 30%));
     //    margin: -5px -20px 0 0;
+   }
+   &-cropped {
+    transform: translateY(0px);
+    width: 68px;
    }
 }
 .menu-burger {

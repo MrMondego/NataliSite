@@ -6,8 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Галерея</title>
    <link rel="stylesheet" href="../css/gallery.css">
-   <link rel="icon" href="../favicon.ico">
+   <link rel="icon" href="../image/logo2.svg">
    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <script>
+    const photosFile = "birds.xml";
+ </script>
 </head>
 <body>
     <div class="modal transparent">
@@ -73,9 +76,11 @@
    <script src="../js/xml_handler_gallery.js"></script>
    <script src="../js/image-popup.js"></script>
    <script>
-    if( document.body.offsetHeight <= $(window).height() ){		
-        $(".footer").addClass("fixed-bottom");
-    }
+    setTimeout(()=>{
+        if( document.body.scrollHeight <= $(window).height() ){		
+            $(".footer").addClass("fixed-bottom");
+        }
+    }, 1000)
     </script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Галерея</title>
+   <link rel="stylesheet" href="../css/gallery.css">
+   <link rel="icon" href="../image/logo2.svg">
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <script>
+      const photosFile = "landscape.xml";
+   </script>
+</head>
+<body>
+   <div class="modal transparent">
+      <div class="modal__close-button"></div>
+      <!-- <div class="modal__content"> -->
+          <img class="modal-image" src="" alt="Картина">
+          <p class="modal-text">Some text</p>
+      <!-- </div> -->
+  </div>
+ <div class="overlay"></div>
+ <div class="container">
+    <header class="header container__header header_flex">
+       <div class="logo header__logo">
+           <img src="../image/logo-white.png" class="logo__img">
+       </div>
+       <button class="menu-burger header__menu-burger ">
+           <span></span>
+       </button>
+       <nav class="header__nav nav">
+           <ul class="nav__menu nav__menu_flex">
+               <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+               <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+               <li class="nav__item"><a class="nav__link" href="../index.html#gallery-previews">Галерея</a></li>
+               <li class="nav__item"><a class="nav__link" href="">Магазин</a></li>
+               <li class="nav__item"><a class="nav__link" href="">Школа живописи</a></li>
+               <li class="nav__item"><a class="nav__link" href="">Написать письмо</a></li>
+               <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+           </ul>
+       </nav>
+   </header>
+   <main class="main container__main">
+      <div class="gallery-container container__gallery-container" id="gallery-container">
+
+      </div>
+   </main>
+   <footer class="footer container__footer">
+      <div class="socials footer__socials">
+          <p class="footer__text-information">Социальные сети</p>
+          <a href="https://vk.com/nataiiia.mironova"><img src="../image/vk_logo.png" class="socials__element" alt="VK"></a>
+      </div>
+      <div class="contacts">
+          <p class="footer__text-information">Написать письмо:</p>
+          <p class="contacts__element">tashik.art7@gmail.com</p>
+      </div>
+      <div class="footer__information">
+          <p class="footer__text-information">Информация</p>
+          <nav class="footer__nav">
+              <ul class="footer__menu footer__menu_flex-column">
+                  <li class="footer__item"><a class="footer__link" href="../index.html">Главная</a></li>
+                  <li class="footer__item"><a class="footer__link" href="news.html">Новости</a></li>
+                  <li class="footer__item"><a class="footer__link" href="../index.html#gallery-previews">Галерея</a></li>
+                  <li class="footer__item"><a class="footer__link" href="">Магазин</a></li>
+                  <li class="footer__item"><a class="footer__link" href="">Школа живописи</a></li>
+                  <li class="footer__item"><a class="footer__link" href="">Написать письмо</a></li>
+                  <li class="footer__item"><a class="footer__link" href="">Контакты</a></li>
+              </ul>
+          </nav>
+      </div>
+  </footer>
+ </div>
+ <script src="../js/menu_transformation.js"></script>
+ <script src="../js/xml_handler_gallery.js"></script>
+ <script src="../js/image-popup.js"></script>
+ <script>
+  setTimeout(()=>{
+      if( document.body.scrollHeight <= $(window).height() ){		
+          $(".footer").addClass("fixed-bottom");
+      }
+  }, 1000)
+  </script>
+</body>
+</html>

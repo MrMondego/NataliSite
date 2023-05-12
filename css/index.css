@@ -113,7 +113,6 @@
 .container {
   font-family: "Oswald";
   max-width: 100vw;
-  height: 100vh;
 }
 .container__header {
   position: fixed;
@@ -136,9 +135,10 @@
 }
 
 .header {
-  background: #BFB88C;
+  background: #c1b676;
   transition: background 0.2s ease-in-out;
   max-height: 70px;
+  height: 70px;
   z-index: 10;
   width: 100%;
 }
@@ -171,6 +171,11 @@
 .logo__img {
   width: 100%;
   height: 100%;
+  filter: drop-shadow(2px 0px 3px hsl(53deg, 32%, 30%));
+}
+.logo-cropped {
+  transform: translateY(0px);
+  width: 68px;
 }
 
 .menu-burger {
@@ -428,7 +433,7 @@
   background: hsl(0deg, 33%, 24%);
 }
 .branches__background {
-  background: linear-gradient(180deg, #734D4D 4%, transparent);
+  background: linear-gradient(180deg, #734D4D 0%, transparent 50%);
   width: 100%;
   height: 200px;
   position: relative;
@@ -446,7 +451,7 @@
   width: 100%;
   height: inherit;
   background-size: 86%;
-  background-position: -102% 29%;
+  background-position: -20% 29%;
   filter: brightness(0);
   z-index: 1;
 }
@@ -544,7 +549,7 @@
     padding: 0;
   }
   .header__logo {
-    margin-left: 5%;
+    margin-left: 10%;
   }
   .nav {
     position: fixed;

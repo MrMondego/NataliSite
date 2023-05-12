@@ -87,18 +87,21 @@
    line-height:0;
    column-count:5;
    column-gap:5px;
-   margin-top:2rem;
    &__element {
       width: 100%;
       height: auto;
       margin-bottom: 5px;
+      cursor: pointer;
+      transition: transform 0.4s;
       &:hover {
-         cursor: pointer;
+         transform: scale(1.1);
+         position: relative;
+         z-index: 10;
       }
    }
 }
 .container__gallery-container {
-   padding: 0 20px;
+   padding: 20px;
 }
 @media (max-width: 1200px) {
    .gallery-container {

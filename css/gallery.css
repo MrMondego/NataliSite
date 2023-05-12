@@ -113,7 +113,6 @@
 .container {
   font-family: "Oswald";
   max-width: 100vw;
-  height: 100vh;
 }
 .container__header {
   position: fixed;
@@ -136,9 +135,10 @@
 }
 
 .header {
-  background: #BFB88C;
+  background: #c1b676;
   transition: background 0.2s ease-in-out;
   max-height: 70px;
+  height: 70px;
   z-index: 10;
   width: 100%;
 }
@@ -171,6 +171,11 @@
 .logo__img {
   width: 100%;
   height: 100%;
+  filter: drop-shadow(2px 0px 3px hsl(53deg, 32%, 30%));
+}
+.logo-cropped {
+  transform: translateY(0px);
+  width: 68px;
 }
 
 .menu-burger {
@@ -386,19 +391,22 @@
        column-count: 5;
   -moz-column-gap: 5px;
        column-gap: 5px;
-  margin-top: 2rem;
 }
 .gallery-container__element {
   width: 100%;
   height: auto;
   margin-bottom: 5px;
+  cursor: pointer;
+  transition: transform 0.4s;
 }
 .gallery-container__element:hover {
-  cursor: pointer;
+  transform: scale(1.1);
+  position: relative;
+  z-index: 10;
 }
 
 .container__gallery-container {
-  padding: 0 20px;
+  padding: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -455,7 +463,7 @@
     padding: 0;
   }
   .header__logo {
-    margin-left: 5%;
+    margin-left: 10%;
   }
   .nav {
     position: fixed;

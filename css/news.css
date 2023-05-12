@@ -113,7 +113,6 @@
 .container {
   font-family: "Oswald";
   max-width: 100vw;
-  height: 100vh;
 }
 .container__header {
   position: fixed;
@@ -136,9 +135,10 @@
 }
 
 .header {
-  background: #BFB88C;
+  background: #c1b676;
   transition: background 0.2s ease-in-out;
   max-height: 70px;
+  height: 70px;
   z-index: 10;
   width: 100%;
 }
@@ -171,6 +171,11 @@
 .logo__img {
   width: 100%;
   height: 100%;
+  filter: drop-shadow(2px 0px 3px hsl(53deg, 32%, 30%));
+}
+.logo-cropped {
+  transform: translateY(0px);
+  width: 68px;
 }
 
 .menu-burger {
@@ -319,7 +324,7 @@
     padding: 0;
   }
   .header__logo {
-    margin-left: 5%;
+    margin-left: 10%;
   }
   .nav {
     position: fixed;
@@ -464,14 +469,51 @@
 
 .modal-post {
   display: none;
-  margin-top: 150px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 150px;
   width: 100%;
   height: 100vh;
   background: #fff;
+  z-index: 2;
+  overflow-y: auto;
+  opacity: 0;
+  transform: translateY(10vh);
+  transition: opacity 1s, transform 1s;
+}
+.modal-post.active {
+  transform: translateY(0vh);
+  opacity: 1;
 }
 .modal-post__content {
   width: 80%;
   margin: 0 auto;
+}
+.modal-post__go-back-button {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  padding: 15px;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 20pt;
+  cursor: pointer;
+}
+.modal-post__go-back-button::before {
+  content: "<";
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 5px;
+  font-size: 20pt;
+  transform: translateX(0px);
+  transition: transform 0.3s ease-in-out;
+}
+.modal-post__go-back-button:hover::before {
+  transform: translateX(-10px);
 }
 
 .post-content__title {

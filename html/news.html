@@ -4,12 +4,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../image/logo2.svg">
    <title>Новости</title>
    <link rel="stylesheet" href="../css/news.css">
 </head>
 <body>
 <div class="overlay"></div>
 <div class="modal-post">
+   <button class="modal-post__go-back-button">Назад</button>
    <div class="modal-post__content post-content">
       <h1 class="post-content__title">Заголовок</h1>
       <h2 class="post-content__date post-date">00.00.0000</h2>
@@ -23,8 +25,8 @@
 </div>
 <div class="container">
    <header class="header container__header header_flex">
-        <div class="logo header__logo">
-            <img src="../image/logo-white.png" class="logo__img" alt="logo">
+        <div class="logo header__logo logo-cropped">
+            <img src="../image/logo-white-cropped.png" class="logo__img" alt="logo">
         </div>
         <button class="menu-burger header__menu-burger">
             <span></span>
@@ -43,8 +45,8 @@
     </header>
     <main class="main container__main">
       <section class="news-container main__news-container">
-         <div class="post news-container__post">
-            <a href="" class="post-link" onclick="e => {e.preventDeafult(); document.querySelector('.modal-post').style.display = 'block'}">
+         <!-- <div class="post news-container__post">
+            <a href="" class="post-link">
                <div class="post-row">
                   <img src="../image/section-1.png" alt="" srcset="" class="post-row__img">
                   <div class="post-row__text-wrapper">
@@ -70,7 +72,7 @@
                   </div>
                </div>
             </a>
-         </div>
+         </div> -->
       </section>
     </main>
     <footer class="footer container__footer">
@@ -100,9 +102,12 @@
 </div>
 <script src="../js/menu_transformation.js"></script>
 <script>
-   if( document.querySelector(".footer").offsetTop <= window.innerHeight ){		
-      document.querySelector(".footer").classList.add("fixed-bottom");
-   }
-</script>
+   setTimeout(()=>{
+       if( document.body.scrollHeight <= window.innerHeight ){		
+           document.querySelector(".footer").classList.add("fixed-bottom");
+       }
+   }, 1000)
+   </script>
+<script src="../js/news-modal.js"></script>
 </body>
 </html>

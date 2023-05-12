@@ -14,7 +14,7 @@ addEventListener("DOMContentLoaded", () => {
    const maxOffset = sliderLine.offsetWidth -
       sliderLine.offsetWidth/sliderLineElement.offsetWidth -
       sliderLineElement.offsetWidth;
-   console.log(sliderLineElement.offsetWidth)
+
    let offset = 0;
    function slideToNext() {
       offset += sliderLineElement.offsetWidth + marginRight;
