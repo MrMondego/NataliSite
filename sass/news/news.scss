@@ -65,7 +65,7 @@
    position: fixed;
    left: 0;
    top: 0;
-   padding-top: 150px;
+   padding-top: 100px;
    width: 100%;
    height: 100vh;
    background: #fff;
@@ -83,12 +83,14 @@
       margin: 0 auto;
    }
    &__go-back-button {
-      position: absolute;
-      top: 70px;
-      left: 0;
+      display: block;
+      text-align: left;
+      // position: absolute;
+      // top: 70px;
+      // left: 0;
       // width: 100px;
       // height: 30px;
-      padding: 15px;
+      padding: 0 0 30px 30px;
       background: none;
       border: none;
       color: #000;
@@ -102,6 +104,16 @@
          font-size: 20pt;
          transform: translateX(0px);
          transition: transform 0.3s ease-in-out;
+      }
+      &::after {
+         content: "";
+         display: block;
+         position: relative;
+         left: -30px;
+         top: 10px;
+         background: rgb(170, 170, 170);
+         width: 100vw;
+         height: 1px;
       }
       &:hover {
          &::before {
@@ -128,6 +140,14 @@
    &__text-wrapper {
       @include mixins.adaptiv-font(21, 19);
       padding-top: 1em;
+   }
+   &__link-anim {
+      text-decoration: none;
+      color: #000;
+      transition: color 0.3s;
+      &:hover {
+         color: hsl(0, 52%, 47%);
+      }
    }
 }
 @media (max-width: 650px) {
