@@ -394,7 +394,7 @@
   padding: 30px 0px 50px 0px;
 }
 .main__gallery-previews {
-  padding: 40px 20px;
+  padding: 70px 20px 20px 20px;
 }
 
 .typing-container {
@@ -423,7 +423,7 @@
 
 .branches {
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 .branches::before {
   content: "";
@@ -610,9 +610,6 @@
   .nav__item {
     padding: 10px 20px !important;
   }
-  .main__gallery-previews {
-    padding: 20px 20px;
-  }
   .gallery-category {
     max-width: 300px;
   }
@@ -626,7 +623,7 @@
   }
   .branches__text {
     background-size: 140%;
-    background-position: 100% -23%;
+    background-position: 100% -5%;
   }
   .footer {
     justify-content: center;

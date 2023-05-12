@@ -12,9 +12,9 @@
          padding: 10px 20px !important;
       }
    }
-   .main__gallery-previews {
-      padding: 20px 20px;
-   }
+   // .main__gallery-previews {
+   //    padding: 20px 20px;
+   // }
    .gallery-category {
       max-width: 300px;
       &:not(:last-child) {
@@ -29,7 +29,7 @@
       }
       &__text {
          background-size: 140%;
-         background-position: 100% -23%;
+         background-position: 100% -5%;
       }
   }
    .footer {
