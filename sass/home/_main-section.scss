@@ -69,17 +69,18 @@
       background: hsl(0deg 33% 24%);
    }
    &__background {
-      background: linear-gradient(180deg, vars.$main-color 0%, transparent 50%);
+      // background: linear-gradient(180deg, vars.$main-color 0%, transparent 50%);
       width: 100%;
-      height: 200px;
-      position: relative;
+      height: 50px;
+      // position: relative;
       // top: -50%;
    }
    &__bird {
-      background: url("../image/section-1_background.png") left no-repeat;
+      background: url("../image/branch-section.jpg") left no-repeat;
       width: 100%;
       height: inherit;
       position: absolute;
+      background-position-x: 5%;
       background-size: contain;
    }
    &__text {

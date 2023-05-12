@@ -112,7 +112,7 @@
 
 .container {
   font-family: "Oswald";
-  max-width: 100vw;
+  overflow-x: hidden;
 }
 .container__header {
   position: fixed;
@@ -433,16 +433,15 @@
   background: hsl(0deg, 33%, 24%);
 }
 .branches__background {
-  background: linear-gradient(180deg, #734D4D 0%, transparent 50%);
   width: 100%;
-  height: 200px;
-  position: relative;
+  height: 50px;
 }
 .branches__bird {
-  background: url("../image/section-1_background.png") left no-repeat;
+  background: url("../image/branch-section.jpg") left no-repeat;
   width: 100%;
   height: inherit;
   position: absolute;
+  background-position-x: 5%;
   background-size: contain;
 }
 .branches__text {
@@ -594,10 +593,6 @@
     visibility: visible;
     transition: all 0.3s;
   }
-  .branches__text {
-    background-size: contain;
-    background-position: initial;
-  }
   .gallery-category {
     width: 300px;
   }
@@ -627,10 +622,11 @@
   }
   .branches__bird {
     background-size: 158%;
+    background-position-x: -5%;
   }
   .branches__text {
     background-size: 140%;
-    background-position: 100% -34%;
+    background-position: 100% -23%;
   }
   .footer {
     justify-content: center;
