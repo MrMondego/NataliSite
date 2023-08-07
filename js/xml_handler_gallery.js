@@ -39,6 +39,15 @@ fetch(pathToFile + photosFile)
          modalImage.setAttribute('src', src);
          modalImage.setAttribute('alt', alt);
          modalText.innerHTML = imgDescriptions[i];
+
+         if(modalText.textContent.trim() == "")
+        {
+          modalText.style.display = "none";
+        }
+        else {
+          modalText.style.display = "block";
+        }
+
          clearTimeout(timeout);
          modal.style.display = 'flex';
          setTimeout(() => modal.classList.toggle("opaque"), 1);
