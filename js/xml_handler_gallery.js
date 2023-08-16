@@ -1,8 +1,7 @@
 const hostName = window.location.pathname.split("/")[1],
       pathToFile = (hostName !== 'html' ? "/" + hostName : '') + '/xml/';
 
-const imgUrls = [];
-const imgDescriptions = [];
+const imagesData = []
 const modal = document.querySelector('.modal');
 const modalImage = document.querySelector('.modal-image');
 const modalText = document.querySelector('.modal-text');
@@ -16,29 +15,48 @@ fetch(pathToFile + photosFile)
     photoElements.forEach(function(photoElement) {
       const urlElement = photoElement.querySelector('url');
       const descriptionElement = photoElement.querySelector('description');
+      const videoElements = photoElement.querySelectorAll("video")
       if (urlElement && descriptionElement) {
         const url = urlElement.textContent.trim();
         const description = descriptionElement.innerHTML;
-        imgUrls.push(url);
-        imgDescriptions.push(description);
+        imagesData.push({
+          url: url,
+          description: description,
+          attachedVideos: videoElements
+        })
       }
     });
-   //  console.log(imgUrls,imgDescriptions)
 
    const galleryOverlay = document.createElement('div');
    galleryOverlay.classList.add('gallery__overlay');
 
     const container = document.getElementById('gallery-container');
-    for (let i = 0; i < imgUrls.length; i++) {
+    for (let i = 0; i < imagesData.length; i++) {
       const imgElement = document.createElement('img');
-      imgElement.src = imgUrls[i];
+      imgElement.src = imagesData[i].url;
       imgElement.className = "gallery-container__element";
       imgElement.addEventListener('click', (evt) => {
          const src = evt.target.getAttribute('src');
          const alt = evt.target.getAttribute('alt');
          modalImage.setAttribute('src', src);
          modalImage.setAttribute('alt', alt);
-         modalText.innerHTML = imgDescriptions[i];
+         modalText.innerHTML = imagesData[i].description;
+
+         if(imagesData[i].attachedVideos.length) {
+          imagesData[i].attachedVideos.forEach(el => {
+            const url = el.textContent
+            const iframe = document.createElement("iframe")
+            iframe.setAttribute("src", url)
+            iframe.setAttribute("width", 853)
+            iframe.setAttribute("height", 480)
+            iframe.setAttribute("allow", "autoplay; encrypted-media; fullscreen; picture-in-picture;")
+            iframe.setAttribute("frameborder", 0 )
+            iframe.setAttribute("allowfullscreen", true)
+            iframe.classList.add("modal-text__video-element")
+
+            modalText.appendChild(iframe)
+          })
+         }
 
          if(modalText.textContent.trim() == "")
         {
@@ -55,10 +73,7 @@ fetch(pathToFile + photosFile)
          galleryOverlay.style.display = 'block';
          toggleLockScroll();
       });
-      // const pElement = document.createElement('p');
-      // pElement.textContent = imgDescriptions[i];
       container.appendChild(imgElement);
-      // container.appendChild(pElement);
     }
     galleryOverlay.addEventListener('click', () => {
       modal.classList.toggle("opaque");
