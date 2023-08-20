@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <photos>
    <photo>
-      <url>https://sun9-36.userapi.com/impg/lKviR3VIpogQah_3OxIMZ3UaGt_cgec3y2XsRg/r_i209KElBs.jpg?size=1600x1142&amp;quality=96&amp;sign=df5fb83b2258666d664034cdfb1028e6&amp;type=album</url>
-      <description></description>
-   </photo>
-   <photo>
       <url>
       https://sun9-41.userapi.com/impg/nGVpFLsO_x5o8VcZpsKKVxbQxgdfr9NL7eHJiA/mVNhonI7Z88.jpg?size=2560x1898&amp;quality=95&amp;sign=5a757dc6ff9b70753510d528aa1044aa&amp;type=album
       </url>
@@ -42,6 +38,37 @@
          <p>Калитка</p>
          <p>Июнь, 2023</p>
          <p>Холст, масло, 24\18</p>
+      </description>
+   </photo>
+   <photo>
+      <url>
+      https://sun9-63.userapi.com/impg/x4F8kDgXyxjcUG0BXURmBfVyelNVJwTYffnVkw/cSSPNxnSAfQ.jpg?size=1600x1092&amp;quality=96&amp;sign=db948de7bdf46c25da8d2db8d37cd8bb&amp;type=album
+      </url>
+      <description>
+         <p>Алушта. Старые крыши</p>
+         <p>Масло. 21/30</p>
+         <p>Август, 2021</p>
+      </description>
+   </photo>
+   <photo>
+      <url>
+      https://sun9-77.userapi.com/impg/H-xGcKOm-e0fT-Vyo2RH7io9GeieX7NFvpS43w/MK9ZIMxSrdQ.jpg?size=1131x1600&amp;quality=96&amp;sign=51b4fe51a6a11e1881ce89c9716d6d27&amp;type=album
+      </url>
+      <description>
+         <p>Восход над Алуштой</p>
+         <p>Масло, 30/31</p>
+         <p>Август, 2021</p>
+      </description>
+   </photo>
+   <photo>
+      <url>
+      https://sun9-29.userapi.com/impg/p20u59Z7ner7E3XAdhxUvwbvrVpwjx1_bkVIRw/ufuvyLkl0_4.jpg?size=1600x1100&amp;quality=95&amp;sign=5fb256285a97d77aca6b59f3948d74d5&amp;type=album
+      </url>
+      <description>
+         <p>Миндаль цветет</p>
+         <p>Холст, масло, 21/30</p>
+         <p>Апрель, 2022</p>
+         <img src="https://sun9-5.userapi.com/impg/6JocC-tM3Kl5Xy8q2fjuQERFPDG0fNc4o2yaFA/Gkl39eOmNrI.jpg?size=1200x1600&amp;quality=95&amp;sign=86b573aacb844cedde2da5474ddcda51&amp;type=album" alt="alt"></img>
       </description>
    </photo>
 </photos>
