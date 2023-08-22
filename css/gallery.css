@@ -466,9 +466,6 @@
     visibility: visible;
     transition: all 0.3s;
   }
-  .gallery-category {
-    width: 300px;
-  }
   .fixed-bottom {
     position: static;
   }
@@ -483,12 +480,8 @@
   .nav__item {
     padding: 10px 20px !important;
   }
-  .gallery-category {
-    max-width: 300px;
-  }
-  .gallery-category:not(:last-child) {
-    margin: 0;
-    margin-right: 10px;
+  .gallery-category__title {
+    left: 16px;
   }
   .branches__bird {
     background-size: 158%;
