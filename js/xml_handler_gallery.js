@@ -58,7 +58,7 @@ fetch(pathToFile + photosFile)
           })
          }
 
-         if(modalText.textContent.trim() == "")
+        if(!modalText.innerHTML.trim())
         {
           modalText.style.display = "none";
         }
